@@ -1,0 +1,6 @@
+baseURL = "http://yfrobotics.github.io"
+languageCode = "en-us"
+title = "YF Robotics Laboratory"
+
+[params]
+  subtitle = "Build a brighter future with robots."
