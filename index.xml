@@ -2,9 +2,9 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>YF Robotics Laboratory</title>
-    <link>http://yfrobotics.github.io/</link>
+    <link>https://yfrobotics.github.io/</link>
     <description>Recent content on YF Robotics Laboratory</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="http://yfrobotics.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-us</language><atom:link href="https://yfrobotics.github.io/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>
