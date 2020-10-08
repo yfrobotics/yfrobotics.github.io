@@ -1,4 +1,4 @@
-baseURL = "http://yfrobotics.github.io"
+baseURL = "https://yfrobotics.github.io"
 languageCode = "en-us"
 title = "YF Robotics Laboratory"
 
