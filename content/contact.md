@@ -5,11 +5,12 @@ draft: false
 menu: true
 ---
 
-Follow us on Twitter: <a href="https://twitter.com/yfrobotics">@yfrobotics</a>
+**Address**
 
-Address:  
 YF Robotics Laboratory  
-Birmingham, West Midland  
-United Kingdom  
-  
+Birmingham, West Midland, United Kingdom  
+
+**Contact**
+
+Follow us on Twitter: <a href="https://twitter.com/yfrobotics">@yfrobotics</a>  
 Email: yfrobotics@gmail.com  

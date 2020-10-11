@@ -1,23 +1,20 @@
 {{ define "main" }}
 
-<div style="display: flex-container;">
-  
-  <section class="container">
-    <div class="row">
-      <!-- header image -->
-      <img src="images/pepper_robot.jpg" class="img-fluid" alt="Pepper robot">
-    </div>
-  </section>
-  
-  <section class="container">
-    <div class="row justify-content-center minisection">
+<!-- introduction -->
+<div class="div-padding bg-color-black fg-color-white">
+  <section class="container clearfix">
+    <img src="images/pepper_side.jpg" class="float-right" alt="..." style="height:500px; width:auto;">
+    <div class="row minisection">
       <!-- Note that the content for index.html, as a sort of list page, will pull from content/_index.md -->
       {{ .Content }}
     </div>
   </section>
+</div>
 
-  <section class="container">
-    <div class="row justify-content-center minisection">
+<!-- education -->
+<div class="div-padding">
+  <section class="container clearfix">
+    <div class="row minisection">
     {{ with .Site.GetPage "/education" }} 
       <h2>{{ .Title }}</h2>
       {{ .Content }}
@@ -30,29 +27,41 @@
     {{ end }}
     </div>
   </section>
-  
+</div>
+
+<!-- contribution -->
+<div class="div-padding bg-color-grey">  
   <section class="container">
-    <div class="row justify-content-center minisection">
     {{ with .Site.GetPage "/contribution" }} 
       <h2>{{ .Title }}</h2>
       {{ .Content }}
+      <div class="row minisection">
       {{range .Pages.ByParam "order"}}
         <div class="col-sm">
         <h3 class="text-center">{{ .Title }}</h3>
         {{ .Content }}
         </div>
       {{ end }}
+      </div>
     {{ end }}
-    </div>
   </section>
+</div>
 
+<!-- contact -->
+<div class="div-padding">
   <section class="container">
     {{ with .GetPage "contact"}} 
-      <h2 class="text-center">{{ .Title }}</h2>
-      {{ .Content}}
+      <h2>{{ .Title }}</h2>
+      <div class="row">
+        <div class="col-6">
+          <img src="images/map.png" class="img-fluid" alt="Responsive image">
+        </div>
+        <div class="col-4">
+          {{ .Content}}
+        </div>
+      </div>
     {{ end}}
   </section>
-  
 </div>
 
 {{ end }}
