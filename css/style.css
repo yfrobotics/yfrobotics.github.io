@@ -1,4 +1,5 @@
 h1 {
+  font-size: 4em;
   font-weight: 1000;
 }
 
@@ -12,13 +13,26 @@ h3 {
 
 body {
   font-size: 1.2em;
+  color: #0e0e0e;
+}
+
+.div-padding {
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 .minisection {
-  margin-top: 20px;
-  margin-bottom: 20px;
+  ;
 }
 
-.bg1 {
+.bg-color-grey {
   background-color: #eeeeee;
+}
+
+.bg-color-black {
+  background-color: #000000; 
+}
+
+.fg-color-white {
+  color: #fefefe;
 }

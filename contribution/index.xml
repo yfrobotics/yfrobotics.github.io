@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Community Contribution on YF Robotics Laboratory</title>
+    <title>Contribution on YF Robotics Laboratory</title>
     <link>https://yfrobotics.github.io/contribution/</link>
-    <description>Recent content in Community Contribution on YF Robotics Laboratory</description>
+    <description>Recent content in Contribution on YF Robotics Laboratory</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 07 Oct 2020 22:47:58 +0100</lastBuildDate><atom:link href="https://yfrobotics.github.io/contribution/index.xml" rel="self" type="application/rss+xml" />
@@ -13,8 +13,8 @@
       <pubDate>Wed, 07 Oct 2020 22:47:58 +0100</pubDate>
       
       <guid>https://yfrobotics.github.io/contribution/col2/</guid>
-      <description>We love opensource and we extensively work on industrial robots and make innovations using opensource software and hardware, that includes:
- gnu/gcc Linux ROS/Gazebo Arduino Raspberry Pi  </description>
+      <description>We love opensource and we make innovations using opensource software and hardware includeing:
+ Linux gnu/gcc ROS/Gazebo Arduino Raspberry Pi  </description>
     </item>
     
     <item>
@@ -24,7 +24,7 @@
       
       <guid>https://yfrobotics.github.io/contribution/col1/</guid>
       <description>We work and publish papers in the research area of:
- Machine learning Reinforcement and transfer learning SLAM Operating systems and task scheduling for robots Dexterous robot hand Self-driving cars Safety for autonomous systems Swarm robots  </description>
+ Reinforcement and transfer learning Operating systems and task scheduling for robots Dexterous robot hand Safety for autonomous systems  </description>
     </item>
     
   </channel>
