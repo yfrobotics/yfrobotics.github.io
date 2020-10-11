@@ -3,10 +3,14 @@
 <!-- introduction -->
 <div class="div-padding bg-color-black fg-color-white">
   <section class="container clearfix">
-    <img src="images/pepper_side.jpg" class="float-right" alt="..." style="height:500px; width:auto;">
     <div class="row minisection">
-      <!-- Note that the content for index.html, as a sort of list page, will pull from content/_index.md -->
-      {{ .Content }}
+      <div class="col-sm">
+        <img src="images/pepper_side.jpg" class="float-right" alt="..." style="height:500px; width:auto;">
+      </div>
+      <div class="col-sm">
+        <!-- Note that the content for index.html, as a sort of list page, will pull from content/_index.md -->
+        {{ .Content }}
+      </div>
     </div>
   </section>
 </div>
