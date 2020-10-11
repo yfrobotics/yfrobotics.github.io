@@ -6,10 +6,9 @@ menu: true
 order: 2
 ---
 
-We love opensource and we extensively work on industrial robots and make innovations using opensource software and hardware, that includes:
+We love opensource and we make innovations using opensource software and hardware includeing:
 
-- gnu/gcc
-- Linux
+- Linux gnu/gcc
 - ROS/Gazebo
 - Arduino
 - Raspberry Pi

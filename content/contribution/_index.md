@@ -1,8 +1,8 @@
 ---
-title: "Community Contribution"
+title: "Contribution"
 date: 2020-10-07T22:47:58+01:00
 draft: false
 menu: true
 ---
 
-We continuous to contribute to the opensource community, especially on robotics projects and we hope our research can contribute to the future development of robotics.
+We continuous to contribute to academic research and the opensource community, especially on robotics projects and we hope our work can contribute to the future development of robotics.

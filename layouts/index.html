@@ -18,6 +18,9 @@
     {{ with .Site.GetPage "/education" }} 
       <h2>{{ .Title }}</h2>
       {{ .Content }}
+      <div class="col-sm">
+        <img src="images/robot-hand.jpg" class="float-right" alt="..." style="height:350px; width:auto;">
+      </div>
       {{range .Pages.ByParam "order"}}
         <div class="col-sm">
           <h3 class="text-center">{{ .Title }}</h3>
@@ -42,6 +45,9 @@
         {{ .Content }}
         </div>
       {{ end }}
+      <div class="col-sm">
+        <img src="images/asmo.jpg" class="float-right" alt="..." style="height:400px; width:auto;">
+      </div>
       </div>
     {{ end }}
   </section>
@@ -56,7 +62,7 @@
         <div class="col-6">
           <img src="images/map.png" class="img-fluid" alt="Responsive image">
         </div>
-        <div class="col-4">
+        <div class="col-4" style="">
           {{ .Content}}
         </div>
       </div>
