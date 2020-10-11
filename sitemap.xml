@@ -2,4 +2,52 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
+  <url>
+    <loc>https://yfrobotics.github.io/education/col2/</loc>
+    <lastmod>2020-10-07T22:47:58+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://yfrobotics.github.io/contribution/</loc>
+    <lastmod>2020-10-07T22:47:58+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://yfrobotics.github.io/contact/</loc>
+    <lastmod>2020-10-07T22:47:58+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://yfrobotics.github.io/contribution/col2/</loc>
+    <lastmod>2020-10-07T22:47:58+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://yfrobotics.github.io/education/</loc>
+    <lastmod>2020-10-07T22:47:58+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://yfrobotics.github.io/</loc>
+    <lastmod>2020-10-07T22:47:58+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://yfrobotics.github.io/contribution/col1/</loc>
+    <lastmod>2020-10-07T22:47:58+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://yfrobotics.github.io/education/col1/</loc>
+    <lastmod>2020-10-07T22:47:58+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://yfrobotics.github.io/categories/</loc>
+  </url>
+  
+  <url>
+    <loc>https://yfrobotics.github.io/tags/</loc>
+  </url>
+  
 </urlset>

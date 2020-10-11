@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Homepage on YF Robotics Laboratory</title>
+    <link>https://yfrobotics.github.io/</link>
+    <description>Recent content in Homepage on YF Robotics Laboratory</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 07 Oct 2020 22:47:58 +0100</lastBuildDate><atom:link href="https://yfrobotics.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Collaborate</title>
+      <link>https://yfrobotics.github.io/education/col2/</link>
+      <pubDate>Wed, 07 Oct 2020 22:47:58 +0100</pubDate>
+      
+      <guid>https://yfrobotics.github.io/education/col2/</guid>
+      <description>We fund middle school and high school students from UK, US and China to travel across and co-work in local schools/universities on a collaborate robot project.</description>
+    </item>
+    
+    <item>
+      <title>Contact us</title>
+      <link>https://yfrobotics.github.io/contact/</link>
+      <pubDate>Wed, 07 Oct 2020 22:47:58 +0100</pubDate>
+      
+      <guid>https://yfrobotics.github.io/contact/</guid>
+      <description>Follow us on Twitter: @yfrobotics
+Address:
+YF Robotics Laboratory
+Birmingham, West Midland
+United Kingdom
+Email: yfrobotics@gmail.com</description>
+    </item>
+    
+    <item>
+      <title>Development</title>
+      <link>https://yfrobotics.github.io/contribution/col2/</link>
+      <pubDate>Wed, 07 Oct 2020 22:47:58 +0100</pubDate>
+      
+      <guid>https://yfrobotics.github.io/contribution/col2/</guid>
+      <description>We love opensource and we extensively work on industrial robots and make innovations using opensource software and hardware, that includes:
+ gnu/gcc Linux ROS/Gazebo Arduino Raspberry Pi  </description>
+    </item>
+    
+    <item>
+      <title>Research</title>
+      <link>https://yfrobotics.github.io/contribution/col1/</link>
+      <pubDate>Wed, 07 Oct 2020 22:47:58 +0100</pubDate>
+      
+      <guid>https://yfrobotics.github.io/contribution/col1/</guid>
+      <description>We work and publish papers in the research area of:
+ Machine learning Reinforcement and transfer learning SLAM Operating systems and task scheduling for robots Dexterous robot hand Self-driving cars Safety for autonomous systems Swarm robots  </description>
+    </item>
+    
+    <item>
+      <title>STEM</title>
+      <link>https://yfrobotics.github.io/education/col1/</link>
+      <pubDate>Wed, 07 Oct 2020 22:47:58 +0100</pubDate>
+      
+      <guid>https://yfrobotics.github.io/education/col1/</guid>
+      <description>We help and encourage makers and companies with their STEM products for robot / electronics / programming education. We also produce robot materials, tutorials and books for entry and mid-level robot learners.</description>
+    </item>
+    
+  </channel>
+</rss>

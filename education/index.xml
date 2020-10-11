@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Education on YF Robotics Laboratory</title>
+    <link>https://yfrobotics.github.io/education/</link>
+    <description>Recent content in Education on YF Robotics Laboratory</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 07 Oct 2020 22:47:58 +0100</lastBuildDate><atom:link href="https://yfrobotics.github.io/education/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Collaborate</title>
+      <link>https://yfrobotics.github.io/education/col2/</link>
+      <pubDate>Wed, 07 Oct 2020 22:47:58 +0100</pubDate>
+      
+      <guid>https://yfrobotics.github.io/education/col2/</guid>
+      <description>We fund middle school and high school students from UK, US and China to travel across and co-work in local schools/universities on a collaborate robot project.</description>
+    </item>
+    
+    <item>
+      <title>STEM</title>
+      <link>https://yfrobotics.github.io/education/col1/</link>
+      <pubDate>Wed, 07 Oct 2020 22:47:58 +0100</pubDate>
+      
+      <guid>https://yfrobotics.github.io/education/col1/</guid>
+      <description>We help and encourage makers and companies with their STEM products for robot / electronics / programming education. We also produce robot materials, tutorials and books for entry and mid-level robot learners.</description>
+    </item>
+    
+  </channel>
+</rss>
