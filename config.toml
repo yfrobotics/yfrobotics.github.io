@@ -3,4 +3,11 @@ languageCode = "en-us"
 title = "YF Robotics Laboratory"
 
 [params]
+  favicon = ""
   subtitle = "Build a brighter future with robots."
+  custom_css = ["/css/custom.css"]
+
+  
+[markup.goldmark.renderer]
+  unsafe = true
+    

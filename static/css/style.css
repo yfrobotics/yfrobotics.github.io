@@ -1,0 +1,24 @@
+h1 {
+  font-weight: 1000;
+}
+
+h2 {
+  font-weight: 800;
+}
+
+h3 {
+  font-weight: 600;
+}
+
+body {
+  font-size: 1.2em;
+}
+
+.minisection {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.bg1 {
+  background-color: #eeeeee;
+}
