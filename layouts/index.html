@@ -5,11 +5,11 @@
   <section class="container clearfix">
     <div class="row minisection">
       <div class="col-sm">
-        <img src="images/pepper_side.jpg" class="float-right" alt="..." style="height:500px; width:auto;">
-      </div>
-      <div class="col-sm">
         <!-- Note that the content for index.html, as a sort of list page, will pull from content/_index.md -->
         {{ .Content }}
+      </div>
+      <div>
+        <img src="images/pepper_side.jpg" class= "img-fluid" alt="..." style="max-height:500px; width:auto;">
       </div>
     </div>
   </section>
@@ -23,7 +23,7 @@
       <h2>{{ .Title }}</h2>
       {{ .Content }}
       <div class="col-sm">
-        <img src="images/robot-hand.jpg" class="float-right" alt="..." style="height:350px; width:auto;">
+        <img src="images/robot-hand.jpg" class="img-fluid" alt="..." style="max-height:350px; width:auto;">
       </div>
       {{range .Pages.ByParam "order"}}
         <div class="col-sm">
@@ -50,7 +50,7 @@
         </div>
       {{ end }}
       <div class="col-sm">
-        <img src="images/asmo.jpg" class="float-right" alt="..." style="height:400px; width:auto;">
+        <img src="images/asmo.jpg" class="img-fluid" alt="..." style="max-height:400px; width:auto;">
       </div>
       </div>
     {{ end }}
