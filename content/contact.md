@@ -11,6 +11,5 @@ Birmingham, West Midlands
 United Kingdom  
 
 **Contact**  
-Instagram: <a href="https://instagram.com/yfrobotics">@yfrobotics</a>  
 Twitter: <a href="https://twitter.com/yfrobotics">@yfrobotics</a>  
 Email: yfrobotics@gmail.com  
