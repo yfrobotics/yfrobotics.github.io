@@ -6,4 +6,4 @@ menu: true
 order: 2
 ---
  
-We fund middle school and high school students from UK, US and China to travel across and co-work in local schools/universities on a collaborate robot project.
+We fund middle school and high school students from US and China to travel across and co-work in local schools / universities on a collaborate robot project.

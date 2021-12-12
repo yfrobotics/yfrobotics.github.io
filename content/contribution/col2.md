@@ -6,9 +6,14 @@ menu: true
 order: 2
 ---
 
-We love opensource and we make innovations using opensource software and hardware includeing:
+We love opensource and we make innovations using opensource software and hardware including:
 
-- Linux gnu/gcc
-- ROS/Gazebo
+- Linux gnu / gcc
+- ROS / Gazebo
 - Arduino
 - Raspberry Pi
+- ESP8266 / ESP32
+- BBC Micro:Bit
+- Microsoft MakeCode
+- Processing
+- ...

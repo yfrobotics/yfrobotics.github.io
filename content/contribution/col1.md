@@ -6,9 +6,11 @@ menu: true
 order: 1
 ---
 
-We work and publish papers in the research area of:
+We work and publish academic papers in the research area of:
 
-- Reinforcement and transfer learning
-- Operating systems and task scheduling for robots
-- Dexterous robot hand
-- Safety for autonomous systems
+- Reinforcement learning and transfer learning
+- Operating systems and task scheduling targeted for robots
+- Dexterous robot hand and manipulator
+- Control and sensory technologies
+- Safety assurance for autonomous systems
+- ...
