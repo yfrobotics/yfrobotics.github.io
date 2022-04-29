@@ -15,11 +15,29 @@
   </section>
 </div>
 
-<!-- education -->
+<!-- projects -->
 <div class="div-padding">
   <section class="container clearfix">
     <div class="row minisection">
-    {{ with .Site.GetPage "/education" }} 
+    {{ with .Site.GetPage "/projects" }}
+      <h2>{{ .Title }}</h2>
+      {{ .Content }}
+      {{range .Pages.ByParam "order"}}
+        <div class="col-sm">
+          <h3 class="text-center">{{ .Title }}</h3>
+          {{ .Content }}
+        </div>
+      {{ end }}
+    {{ end }}
+    </div>
+  </section>
+</div>
+
+<!-- education -->
+<div class="div-padding  bg-color-grey">
+  <section class="container clearfix">
+    <div class="row minisection">
+    {{ with .Site.GetPage "/education" }}
       <h2>{{ .Title }}</h2>
       {{ .Content }}
       <div class="col-sm">
@@ -37,9 +55,9 @@
 </div>
 
 <!-- contribution -->
-<div class="div-padding bg-color-grey">  
+<div class="div-padding">
   <section class="container">
-    {{ with .Site.GetPage "/contribution" }} 
+    {{ with .Site.GetPage "/contribution" }}
       <h2>{{ .Title }}</h2>
       {{ .Content }}
       <div class="row minisection">
@@ -58,9 +76,9 @@
 </div>
 
 <!-- contact -->
-<div class="div-padding">
+<div class="div-padding   bg-color-grey">
   <section class="container">
-    {{ with .GetPage "contact"}} 
+    {{ with .GetPage "contact"}}
       <h2>{{ .Title }}</h2>
       <div class="row">
         <div class="col-6">

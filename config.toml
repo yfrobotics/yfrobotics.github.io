@@ -4,10 +4,8 @@ title = "YF Robotics Laboratory"
 
 [params]
   favicon = ""
-  subtitle = "Building a Brighter Future with Robots."
+  subtitle = "Building a Brighter Future with Robots and Autonomous Systems."
   custom_css = ["/css/custom.css"]
 
-  
 [markup.goldmark.renderer]
   unsafe = true
-    

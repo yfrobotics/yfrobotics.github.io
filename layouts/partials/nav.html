@@ -7,7 +7,7 @@
       {{ range .Pages }}
         {{ if .Params.menu }}
         <li class="nav-item">
-          <a class="nav-link" href="{{ .URL }}">{{ .Title }}</a>
+          <a class="nav-link" href="{{ .Params.URL }}">{{ .Title }}</a>
         </li>
         {{ end }}
       {{ end }}

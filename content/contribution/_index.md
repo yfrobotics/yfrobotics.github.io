@@ -5,4 +5,4 @@ draft: false
 menu: true
 ---
 
-Our group members continuous to contribute to academic research and the opensource community, especially on robotics projects and we hope our work can contribute to the future development of robotics.
+Our group members continuous to contribute to academic research and the open source community in robotics. We hope our work can contribute to the future development of robots.

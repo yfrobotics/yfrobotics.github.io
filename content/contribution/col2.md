@@ -6,7 +6,7 @@ menu: true
 order: 2
 ---
 
-We love opensource and we make innovations using opensource software and hardware including:
+We love opensource and we make innovations using open source software and hardware including:
 
 - Linux gnu / gcc
 - ROS / Gazebo
