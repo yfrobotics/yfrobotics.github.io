@@ -1,10 +1,9 @@
 ---
 layout: post
-title:  "Welcome to Jekyll!"
-date:   2024-11-12 03:51:06 +0000
-categories: jekyll update2
+title:  "在机器人系统中使用舵机"
+date:   2021-04-03 03:51:06 +0000
+categories: jekyll update
 ---
-# 在机器人系统中使用舵机
 
 ## 背景
 

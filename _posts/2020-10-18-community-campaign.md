@@ -1,10 +1,9 @@
 ---
 layout: post
-title:  "Welcome to Jekyll21212"
-date:   2024-11-12 03:51:06 +0000
-categories: jekyll update3
+title:  "写在云飞机器人实验室改版之际"
+date:   2020-10-18 03:51:06 +0000
+categories: jekyll update
 ---
-# 写在云飞机器人实验室改版之际
 
 云飞实验室自2010年成立至今，风风雨雨已十载。
 
