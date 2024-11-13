@@ -1,14 +1,13 @@
 ---
 layout: post
-title:  "Welcome to Jekyll!"
-date:   2024-11-12 03:51:06 +0000
-categories: jekyll update2
+title:  "Nvidia Jetson Nano介绍与使用指南"
+date:   2020-11-29 03:51:06 +0000
+categories: jekyll update
 ---
-# Nvidia Jetson Nano介绍与使用指南
 
 [toc]
 
-![jetson-outofbox.JPG](assets/nvidia-jetson-nano-intro-and-guidance/jetson-outofbox.JPG)
+![jetson-outofbox.JPG](/assets/nvidia-jetson-nano-intro-and-guidance/jetson-outofbox.JPG)
 
 > 本文介绍了Nvidia Jetson Nano的硬件参数、性能、使用方法及个人主观的使用体验。
 
@@ -16,7 +15,7 @@ categories: jekyll update2
 
 Jetson Nano是Nvidia在TX2和Xavier获得成功后推出的低配版GPU运算平台。我在Jetson Nano 2019年3月刚上市的时候就入手了一块开发套件（英国Pimoroni购入，110磅）。这次乘着短暂的假期，来补一下对它的评测。谈一个硬件平台，首先绕不开的就是它的纸面参数。在官方的资料上，Jetson Nano公布的参数如下：
 
-![5ea1fa3fce538f099800009c](assets/nvidia-jetson-nano-intro-and-guidance/5ea1fa3fce538f099800009c.png)
+![5ea1fa3fce538f099800009c](/assets/nvidia-jetson-nano-intro-and-guidance/5ea1fa3fce538f099800009c.png)
 
 Nano最大的特色就是包含了一块128核Maxwell架构的GPU，虽然已经是几代前的架构，不过因为用于嵌入式设备，从功耗、体积、价格上也算一个平衡。Nano的计算能力不高，勉强可以使用一些小规模、并且优化过的网络进行推理，训练的话还是不够用的。A53的CPU中规中矩，隔壁的树莓派4已经升级为A72。4GB的内存并不能完全使用，因为其中有一部分（1GB左右）是和显存共享的。Jetson Nano的最大优势还是在体积上，它采用核心板可拆的设计，核心板的大小只有70 x 45 mm，可以很方便的集成在各种嵌入式应用中。同时它的功耗也非常低，有两种模式：
 
@@ -27,29 +26,29 @@ Nano最大的特色就是包含了一块128核Maxwell架构的GPU，虽然已经
 
 Jetson Nano Developer Kit的整体做工十分好，符合Nvidia的一贯质量，这里分享几个图片：
 
-![DSC00697.JPG](assets/nvidia-jetson-nano-intro-and-guidance/DSC00697.JPG)
+![DSC00697.JPG](/assets/nvidia-jetson-nano-intro-and-guidance/DSC00697.JPG)
 
 ▲ Jetson Nano开发套件的背面，可见做工十分精良 ▲
 
-![DSC00704.JPG](assets/nvidia-jetson-nano-intro-and-guidance/DSC00704.JPG)
+![DSC00704.JPG](/assets/nvidia-jetson-nano-intro-and-guidance/DSC00704.JPG)
 
 ▲ Jetson Nano套件的核心板为可拆卸设计，将主板拆卸后会露出一路M.2接口的单路PCIE，可接无线网卡 ▲
 
-![DSC00703.JPG](assets/nvidia-jetson-nano-intro-and-guidance/DSC00703.JPG)
+![DSC00703.JPG](/assets/nvidia-jetson-nano-intro-and-guidance/DSC00703.JPG)
 
 ▲ Jetson Nano核心板的背面，也是安装SD卡的位置 ▲
 
 Jetson Nano的硬件布局如下 (对应A02版本; B01版本除了电源按钮接口和额外一路CSI外，其他布局基本相同)：
 
-![5ea1fa3fce538f099800009c](assets/nvidia-jetson-nano-intro-and-guidance/5ea1fa3fce538f0998000099.png)
+![5ea1fa3fce538f099800009c](/assets/nvidia-jetson-nano-intro-and-guidance/5ea1fa3fce538f0998000099.png)
 
 值得注意的是，Jetson Nano除了之前提到的核心板分离式设计（J2），还包括了一个M.2接口，可以用来外接无线网卡。除此之外，Jetson Nano有与树莓派兼容的外设接口（J41）；风扇接口（J15）；摄像头接口（J13）；以及USB和HDMI。另外J40是按键接口，类似PC主板上的接口，各个接口的说明如下，不用的话直接悬空：
 
-![5ea1fa3fce538f099800009c](assets/nvidia-jetson-nano-intro-and-guidance/5ea1fa3fce538f099800009d.png)
+![5ea1fa3fce538f099800009c](/assets/nvidia-jetson-nano-intro-and-guidance/5ea1fa3fce538f099800009d.png)
 
 
 
-![DSC00698.JPG](assets/nvidia-jetson-nano-intro-and-guidance/DSC00698.JPG)
+![DSC00698.JPG](/assets/nvidia-jetson-nano-intro-and-guidance/DSC00698.JPG)
 
 ▲ Jetson Nano的外设接口，从左至右分别为：电源接口、HDMI、DisplayPort、USB、以太网接口及USB供电接口 ▲
 
@@ -79,7 +78,7 @@ Jetson整个系列型号的对比如下：
 
 官方给出了常见CNN模型在使用TensorRT下得出的帧率（FP16, batch size = 1）:
 
-![fdc5b8d044de7024501e0f3bcf67da88.png](assets/nvidia-jetson-nano-intro-and-guidance/fdc5b8d044de7024501e0f3bcf67da88.png)
+![fdc5b8d044de7024501e0f3bcf67da88.png](/assets/nvidia-jetson-nano-intro-and-guidance/fdc5b8d044de7024501e0f3bcf67da88.png)
 
 可见大部分模型为可用状态（FPS > 10）,其中ResNet、Mobilenet和Tiny Yolo性能优异，可以达到30帧，已经可以用于移动场景了。注意这里使用的是Nvidia自己优化的TensorRT，而不是标准的Tensor库。Nvidia没有公布太多具体的细节，但是提到使用了kernel auto-tuning、dynamic tensor memory、layer fusion和quantization (FP16/INT8) 等方法来加速网络的执行效率，这点还是非常优秀的。
 
@@ -95,7 +94,7 @@ Jetson整个系列型号的对比如下：
 
 Jetson Nano在使用的时候**一定要用一个风扇压一下**，不然会因为被动散热能力不够而频繁死机。我用的是Noctua NF-A4x20 5V PWM。散热片的上方有四个安装风扇的固定孔，需要用自攻螺丝固定。我这里为了不造成破坏，用了四个捆扎带固定风扇。
 
-![DSC00696.JPG](assets/nvidia-jetson-nano-intro-and-guidance/DSC00696.JPG)
+![DSC00696.JPG](/assets/nvidia-jetson-nano-intro-and-guidance/DSC00696.JPG)
 
 ▲ Jetson Nano安装Noctua 5v风扇 ▲
 
@@ -106,11 +105,11 @@ Jetson Nano在使用的时候**一定要用一个风扇压一下**，不然会�
 
 Jetson机身只有Ethernet有线网络，不包括无线网卡，使用的时候有时候不是很方便。官方推荐使用的AC8265这款2.4G/5G双模网卡，同时支持蓝牙4.2。我这里使用的是微雪AC8265网卡 + 天线套件：
 
-![ac8265.jpg](assets/nvidia-jetson-nano-intro-and-guidance/ac8265.jpg)
+![ac8265.jpg](/assets/nvidia-jetson-nano-intro-and-guidance/ac8265.jpg)
 
 安装过程非常简单，将核心板拆卸开，露出M2接口，然后将网卡插入，用一个螺丝固定即可：
 
-![DSC00705.JPG](assets/nvidia-jetson-nano-intro-and-guidance/DSC00705.JPG)
+![DSC00705.JPG](/assets/nvidia-jetson-nano-intro-and-guidance/DSC00705.JPG)
 
 ▲ 为Jetson Nano安装无线网卡 ▲
 
@@ -121,7 +120,7 @@ Jetson机身只有Ethernet有线网络，不包括无线网卡，使用的时候
 
 Jetson包含CSI相机接口（A01有一路；B02版本有两路），可以接树莓派摄像头(基于MX219)，相机接口在如下位置（安装时注意接口的正反，信号触点面朝里）：
 
-![DSC00699.JPG](assets/nvidia-jetson-nano-intro-and-guidance/DSC00699.JPG)
+![DSC00699.JPG](/assets/nvidia-jetson-nano-intro-and-guidance/DSC00699.JPG)
 
 ▲ Jetson Nano CSI相机接口及电源按钮接口 ▲
 
@@ -138,7 +137,7 @@ gst-launch-1.0 nvarguscamerasrc ! 'video/x-raw(memory:NVMM),width=3820, height=2
 
 这么贵重的电路板还是建议使用一个外壳保护一下的。虽然有些外壳的安装步骤较为繁琐，但是可以有效的防止电路板受到损坏，还是值得的。淘宝上有很多选择，但英国这里可选的余地有限（也很贵），最后买了以下这款全金属外壳：
 
-![DSC00711.JPG](assets/nvidia-jetson-nano-intro-and-guidance/DSC00711.JPG)
+![DSC00711.JPG](/assets/nvidia-jetson-nano-intro-and-guidance/DSC00711.JPG)
 
 ▲ Jetson Nano安装好后外壳后的样子。我选的这款金属外壳含电源按钮、天线固定口和相机支架 ▲
 
@@ -214,13 +213,13 @@ gsettings set org.gnome.Vino require-encryption false
 
 相关的示例可以在以下文件夹里找到:
 
-![5ea1fa3fce538f099800009c](assets/nvidia-jetson-nano-intro-and-guidance/5ea1fa3fce538f099800009a.png)
+![5ea1fa3fce538f099800009c](/assets/nvidia-jetson-nano-intro-and-guidance/5ea1fa3fce538f099800009a.png)
 
 关于JetPack的更多内容可见： [https://www.developer.nvidia.com/embedded/jetpack](https://www.developer.nvidia.com/embedded/jetpack)
 
 除了JetPack，Nvidia还提供了以下开发工具：
 
-![5ea1fa3fce538f099800009c](assets/nvidia-jetson-nano-intro-and-guidance/5ea1fa3fce538f099800009b.png)
+![5ea1fa3fce538f099800009c](/assets/nvidia-jetson-nano-intro-and-guidance/5ea1fa3fce538f099800009b.png)
 
 除此之外，官网上还能找到很多Jetson的相关资源：
 
@@ -257,17 +256,17 @@ $ sudo ldconfig
 
 Inference Example 1. [Classifying Images with ImageNet](https://github.com/dusty-nv/jetson-inference/blob/master/docs/imagenet-console-2.md)
 
-![b5ccc214a6798454da0d1a84bc8408a6.png](assets/nvidia-jetson-nano-intro-and-guidance/b5ccc214a6798454da0d1a84bc8408a6.png)
+![b5ccc214a6798454da0d1a84bc8408a6.png](/assets/nvidia-jetson-nano-intro-and-guidance/b5ccc214a6798454da0d1a84bc8408a6.png)
 
 
 Inference Example 2. [Locating Objects with DetectNet](https://github.com/dusty-nv/jetson-inference/blob/master/docs/detectnet-console-2.md)
 
-![cfb588fb34b575ba582b064b728d4385.png](assets/nvidia-jetson-nano-intro-and-guidance/cfb588fb34b575ba582b064b728d4385.png)
+![cfb588fb34b575ba582b064b728d4385.png](/assets/nvidia-jetson-nano-intro-and-guidance/cfb588fb34b575ba582b064b728d4385.png)
 
 
 Inference Example 3. [Semantic Segmentation with SegNet](https://github.com/dusty-nv/jetson-inference/blob/master/docs/segnet-console-2.md)
 
-![86d69d1696ddfbe9de08c52f609f1b1b.png](assets/nvidia-jetson-nano-intro-and-guidance/86d69d1696ddfbe9de08c52f609f1b1b.png)
+![86d69d1696ddfbe9de08c52f609f1b1b.png](/assets/nvidia-jetson-nano-intro-and-guidance/86d69d1696ddfbe9de08c52f609f1b1b.png)
 
 
 除此之外还包含了若干如何Training的教学，感兴趣的朋友自行前往阅读。

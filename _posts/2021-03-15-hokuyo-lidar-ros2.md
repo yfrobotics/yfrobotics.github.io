@@ -1,10 +1,9 @@
 ---
 layout: post
-title:  "Welcome to Jekyll!"
-date:   2024-11-12 03:51:06 +0000
-categories: jekyll update2
+title:  "在ROS 2中使用单线激光雷达 (HOKUYO UST-10LX)"
+date:   2021-03-15 03:51:06 +0000
+categories: jekyll update
 ---
-# 在ROS 2中使用单线激光雷达 (HOKUYO UST-10LX)
 
 ## 1. 单线激光雷达简介
 
@@ -29,11 +28,11 @@ HOKUYO UST-10LX是基于网口的单线激光雷达 (HOKUYO是日本本土最大
 
 看一个激光雷达的参数，主要看扫描频率（40Hz），扫描范围（270度），最大测距距离（10m）以及单圈点数（1081）。机器人运动速度越快，需要对应的扫描频率就越高；而需要的精度越高，障碍物的体积越小，也就需要越高的单圈点数。一般来说还会考量抗光线干扰的能力，不过一般没有具体的量化指标，只能在实际场地测试。
 
-![DSC07332.JPG](assets/hokuyo-lidar-ros2/DSC07332.JPG)
+![DSC07332.JPG](/assets/hokuyo-lidar-ros2/DSC07332.JPG)
 
 ▲ 图1. UST-10LX激光雷达正面
 
-![DSC07334.JPG](assets/hokuyo-lidar-ros2/DSC07334.JPG)
+![DSC07334.JPG](/assets/hokuyo-lidar-ros2/DSC07334.JPG)
 
 ▲ 图2. UST-10LX激光雷达侧面
 
@@ -126,7 +125,7 @@ ros2 run rviz2 rviz2
 ```
 
 
-![hokuyo-rviz.png](assets/hokuyo-lidar-ros2/Screenshot from 2020-03-01 11-07-16.png)
+![hokuyo-rviz.png](/assets/hokuyo-lidar-ros2/Screenshot from 2020-03-01 11-07-16.png)
 
 
 ▲ 图3. 在rviz中查看激光雷达数据
