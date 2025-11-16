@@ -1,0 +1,150 @@
+<script>
+// Auto-link URLs in post content
+(function() {
+  // Auto-link URLs (http, https, ftp)
+  const urlPattern = /(https?:\/\/[^\s<>"{}|\\^`\[\]]+)/gi;
+  const postContent = document.querySelector('.post-content, .page-content, article');
+  
+  if (postContent) {
+    const walker = document.createTreeWalker(
+      postContent,
+      NodeFilter.SHOW_TEXT,
+      null,
+      false
+    );
+    
+    const textNodes = [];
+    let node;
+    while (node = walker.nextNode()) {
+      // Skip if parent is already a link or code block
+      if (node.parentElement.tagName !== 'A' && 
+          node.parentElement.tagName !== 'CODE' &&
+          !node.parentElement.closest('pre') &&
+          !node.parentElement.closest('a')) {
+        textNodes.push(node);
+      }
+    }
+    
+    textNodes.forEach(function(textNode) {
+      const text = textNode.textContent;
+      if (urlPattern.test(text)) {
+        const fragment = document.createDocumentFragment();
+        let lastIndex = 0;
+        let match;
+        urlPattern.lastIndex = 0; // Reset regex
+        
+        while ((match = urlPattern.exec(text)) !== null) {
+          // Add text before URL
+          if (match.index > lastIndex) {
+            fragment.appendChild(document.createTextNode(text.substring(lastIndex, match.index)));
+          }
+          
+          // Create link for URL
+          const link = document.createElement('a');
+          link.href = match[0];
+          link.textContent = match[0];
+          link.target = '_blank';
+          link.rel = 'noopener noreferrer';
+          fragment.appendChild(link);
+          
+          lastIndex = urlPattern.lastIndex;
+        }
+        
+        // Add remaining text
+        if (lastIndex < text.length) {
+          fragment.appendChild(document.createTextNode(text.substring(lastIndex)));
+        }
+        
+        textNode.parentNode.replaceChild(fragment, textNode);
+      }
+    });
+  }
+  
+  // Generate Table of Contents from [toc] marker
+  const allParagraphs = document.querySelectorAll('p');
+  allParagraphs.forEach(function(marker) {
+    if (marker.textContent.trim() === '[toc]' || marker.textContent.trim() === '[TOC]') {
+      const headings = document.querySelectorAll('h1, h2, h3, h4, h5, h6');
+      if (headings.length > 0) {
+        const toc = document.createElement('div');
+        toc.className = 'table-of-contents';
+        toc.innerHTML = '<h3>Table of Contents</h3><ul></ul>';
+        const tocList = toc.querySelector('ul');
+        
+        headings.forEach(function(heading, index) {
+          // Generate ID if not present
+          if (!heading.id) {
+            heading.id = 'heading-' + index + '-' + heading.textContent.toLowerCase()
+              .replace(/[^\w\s-]/g, '')
+              .replace(/\s+/g, '-')
+              .replace(/-+/g, '-')
+              .trim();
+          }
+          
+          const level = parseInt(heading.tagName.substring(1));
+          const li = document.createElement('li');
+          li.className = 'toc-level-' + level;
+          const a = document.createElement('a');
+          a.href = '#' + heading.id;
+          a.textContent = heading.textContent;
+          li.appendChild(a);
+          tocList.appendChild(li);
+        });
+        
+        marker.parentNode.replaceChild(toc, marker);
+      } else {
+        marker.remove();
+      }
+    }
+  });
+})();
+</script>
+
+<style>
+.table-of-contents {
+  margin: 20px 0;
+  padding: 15px;
+  background-color: #f5f5f5;
+  border-left: 4px solid #333;
+  border-radius: 4px;
+}
+
+.table-of-contents h3 {
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-size: 1.2em;
+}
+
+.table-of-contents ul {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+.table-of-contents li {
+  margin: 5px 0;
+  padding-left: 0;
+}
+
+.table-of-contents li.toc-level-2 {
+  padding-left: 20px;
+}
+
+.table-of-contents li.toc-level-3 {
+  padding-left: 40px;
+}
+
+.table-of-contents li.toc-level-4 {
+  padding-left: 60px;
+}
+
+.table-of-contents a {
+  color: #333;
+  text-decoration: none;
+}
+
+.table-of-contents a:hover {
+  text-decoration: underline;
+}
+</style>
+

@@ -18,19 +18,39 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: YF Robotics Lab
+title: 云飞机器人实验室 - YF Robotics Lab
 email: yfrobotics@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
-  YF Robotics Lab
+  云飞机器人实验室 - 让机器充满智慧！
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: yfrobotics
 github_username:  yfrobotics
+youtube_username: "@yfrobotics"
 
 # Build settings
 theme: minima
 plugins:
   - jekyll-feed
+  - jekyll-toc
+
+# Markdown processor settings
+markdown: kramdown
+kramdown:
+  auto_ids: true
+  toc_levels: 1..6
+  hard_wrap: false
+  input: GFM
+  syntax_highlighter: rouge
+  auto_ids_prefix: heading-
+  parse_block_html: true
+  parse_span_html: true
+
+# jekyll-toc configuration
+toc:
+  min_level: 1
+  max_level: 6
+  no_toc_suffix: true
 
 # Exclude from processing.
 # The following items will not be processed, by default.
@@ -52,4 +72,4 @@ plugins:
 #   - vendor/gems/
 #   - vendor/ruby/
 
-google_analytics: G-V8M3QK2REP
+google_analytics: G-4MCC370Z96
