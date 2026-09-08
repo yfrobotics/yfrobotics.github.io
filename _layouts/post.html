@@ -5,14 +5,29 @@ layout: default
 
   <header class="post-header">
     <h1 class="post-title p-name" itemprop="name headline">{{ page.title | escape }}</h1>
-    <p class="post-meta">
-      <time class="dt-published" datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
-        {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
-        {{ page.date | date: date_format }}
-      </time>
-      {%- if page.author -%}
-        • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span class="p-author h-card" itemprop="name">{{ page.author }}</span></span>
-      {%- endif -%}</p>
+    <div class="post-meta">
+      {%- assign author = page.author | default: site.author -%}
+      {%- assign author_url = page.author_url | default: site.author_url -%}
+      {%- if author -%}
+        <div class="post-meta-line">
+          <span class="post-meta-label">文章作者：</span>
+          <span itemprop="author" itemscope itemtype="http://schema.org/Person">
+            {%- if author_url -%}
+              <a class="p-author h-card" itemprop="name" href="{{ author_url }}" target="_blank" rel="noopener noreferrer">{{ author }}</a>
+            {%- else -%}
+              <span class="p-author h-card" itemprop="name">{{ author }}</span>
+            {%- endif -%}
+          </span>
+        </div>
+      {%- endif -%}
+      <div class="post-meta-line">
+        <span class="post-meta-label">发布日期：</span>
+        <time class="dt-published" datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
+          {%- assign date_format = site.minima.date_format | default: "%Y-%m-%d" -%}
+          {{ page.date | date: date_format }}
+        </time>
+      </div>
+    </div>
   </header>
 
   <div class="post-content e-content" itemprop="articleBody">

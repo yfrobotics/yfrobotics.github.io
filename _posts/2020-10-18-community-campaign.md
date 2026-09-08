@@ -2,6 +2,7 @@
 layout: post
 title:  "写在云飞机器人实验室改版之际"
 date:   2020-10-18 03:51:06 +0000
+author: 戴晓天
 categories: jekyll update
 ---
 

@@ -1,0 +1,268 @@
+/* ==========================================================================
+   YF Robotics Lab — custom theme
+   Light theme · engineering-blue accent · dark monochrome logos on light
+   Loaded after minima's main.css so these rules override the defaults.
+   ========================================================================== */
+
+:root {
+  --brand-color: #2563eb;
+  --brand-color-dark: #1d4ed8;
+  --brand-color-light: #eff6ff;
+  --text-color: #1f2937;
+  --background-color: #ffffff;
+  --grey-color: #6b7280;
+  --site-title-color: #111827;
+  --header-border: #e5e7eb;
+}
+
+/* ---------- Base typography ---------- */
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei",
+    "Noto Sans CJK SC", "Source Han Sans SC", "Helvetica Neue",
+    Helvetica, Arial, sans-serif;
+  color: var(--text-color);
+  background-color: var(--background-color);
+  font-size: 17px;
+  line-height: 1.75;
+}
+
+a { color: var(--brand-color); }
+a:visited { color: var(--brand-color-dark); }
+a:hover { color: var(--brand-color-dark); }
+
+.wrapper { max-width: 900px; }
+
+.page-content { padding: 34px 0; }
+.page-heading { font-size: 2rem; font-weight: 700; letter-spacing: -0.01em; }
+
+/* ---------- Header ---------- */
+.site-header {
+  background: #ffffff;
+  border-top: 3px solid var(--brand-color);
+  border-bottom: 1px solid var(--header-border);
+  min-height: 64px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.site-title {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  line-height: 64px;
+  color: var(--site-title-color);
+  font-weight: 600;
+  letter-spacing: 0;
+}
+.site-title:hover,
+.site-title:visited { color: var(--site-title-color); text-decoration: none; }
+
+.site-logo { height: 34px; width: auto; display: block; }
+.site-title-text { font-size: 1.15rem; }
+
+.site-nav { line-height: 64px; }
+.site-nav .page-link {
+  color: #4b5563;
+  line-height: 64px;
+  padding: 0 12px;
+}
+.site-nav .page-link:hover { color: var(--brand-color); text-decoration: none; }
+
+.menu-icon > svg path { fill: #4b5563; }
+.site-nav .trigger { background: #ffffff; }
+
+/* ---------- Home hero ---------- */
+.hero {
+  background: linear-gradient(180deg, #f8fafc 0%, #eef2ff 100%);
+  border: 1px solid #eef0f3;
+  border-radius: 14px;
+  text-align: center;
+  padding: 48px 24px 40px;
+  margin-bottom: 44px;
+}
+.hero-banner {
+  max-width: 340px;
+  width: 100%;
+  height: auto;
+}
+.hero-tagline {
+  margin: 20px 0 0;
+  color: var(--brand-color);
+  font-size: 1.15rem;
+  letter-spacing: 0.02em;
+}
+
+/* ---------- Post list ---------- */
+.post-list-heading {
+  font-size: 1.4rem;
+  font-weight: 700;
+  margin: 0 0 6px;
+}
+
+.post-list { margin: 0; padding: 0; list-style: none; }
+.post-list > li {
+  padding: 22px 0;
+  border-bottom: 1px solid #eef0f3;
+}
+.post-list > li:first-child { padding-top: 8px; }
+.post-list > li:last-child { border-bottom: none; }
+
+.post-link {
+  color: var(--text-color);
+  font-weight: 600;
+  transition: color 0.15s ease;
+}
+.post-link:hover { color: var(--brand-color); }
+
+.post-meta { color: var(--grey-color); font-size: 0.85rem; }
+
+.post-list p { color: #4b5563; margin-top: 6px; font-size: 0.98rem; }
+
+/* ---------- Post byline ---------- */
+.post-meta-line { margin: 2px 0; }
+.post-meta-label {
+  font-weight: 600;
+  color: #4b5563;
+  margin-right: 0.5em;
+}
+
+/* ---------- Post content ---------- */
+.post-content h2,
+.post-content h3 { margin-top: 2em; font-weight: 700; }
+.post-content h2 { padding-bottom: 0.35em; border-bottom: 2px solid #eef2ff; }
+
+.post-content a {
+  text-decoration: underline;
+  text-decoration-color: #bfdbfe;
+  text-underline-offset: 3px;
+}
+.post-content a:hover { text-decoration-color: var(--brand-color); }
+
+.post-content blockquote {
+  border-left: 4px solid var(--brand-color);
+  background: #f8fafc;
+  color: #4b5563;
+  padding: 12px 20px;
+  border-radius: 0 8px 8px 0;
+}
+
+.post-content img { border-radius: 8px; }
+
+/* ---------- Code ---------- */
+
+/* Fenced code blocks */
+.post-content pre {
+  background: #f8fafc;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  padding: 16px 18px;
+  overflow-x: auto;
+  line-height: 1.6;
+  font-size: 0.88em;
+}
+.post-content pre > code {
+  background: transparent;
+  border: 0;
+  border-radius: 0;
+  padding: 0;
+  color: #24292f;
+  font-family: "JetBrains Mono", "Fira Code", "SF Mono", "Cascadia Code",
+    "Source Code Pro", Consolas, "Liberation Mono", Menlo, monospace;
+}
+
+/* Inline code */
+.post-content :not(pre) > code {
+  background: var(--brand-color-light);
+  color: #1e40af;
+  border: 1px solid #dbeafe;
+  border-radius: 4px;
+  padding: 0.1em 0.4em;
+  font-size: 0.85em;
+}
+
+/* Syntax highlighting palette (tuned to the accent) */
+.post-content .highlight .c,
+.post-content .highlight .c1,
+.post-content .highlight .cm,
+.post-content .highlight .cs,
+.post-content .highlight .ch,
+.post-content .highlight .cd,
+.post-content .highlight .cp,
+.post-content .highlight .cpf { color: #6b7280; font-style: italic; }
+
+.post-content .highlight .k,
+.post-content .highlight .kd,
+.post-content .highlight .kn,
+.post-content .highlight .kp,
+.post-content .highlight .kr,
+.post-content .highlight .kt,
+.post-content .highlight .kv { color: #2563eb; font-weight: 600; }
+
+.post-content .highlight .s,
+.post-content .highlight .sb,
+.post-content .highlight .sc,
+.post-content .highlight .sd,
+.post-content .highlight .s2,
+.post-content .highlight .se,
+.post-content .highlight .sh,
+.post-content .highlight .si,
+.post-content .highlight .sx,
+.post-content .highlight .sr,
+.post-content .highlight .s1,
+.post-content .highlight .ss,
+.post-content .highlight .sa,
+.post-content .highlight .dl { color: #059669; }
+
+.post-content .highlight .m,
+.post-content .highlight .mf,
+.post-content .highlight .mh,
+.post-content .highlight .mi,
+.post-content .highlight .il,
+.post-content .highlight .mo,
+.post-content .highlight .mb,
+.post-content .highlight .mx { color: #d97706; }
+
+.post-content .highlight .nf,
+.post-content .highlight .nc,
+.post-content .highlight .nn { color: #7c3aed; }
+
+.post-content .highlight .nb,
+.post-content .highlight .nt,
+.post-content .highlight .nv,
+.post-content .highlight .na,
+.post-content .highlight .no,
+.post-content .highlight .nd,
+.post-content .highlight .ni,
+.post-content .highlight .ne,
+.post-content .highlight .nl,
+.post-content .highlight .vc,
+.post-content .highlight .vg,
+.post-content .highlight .vi,
+.post-content .highlight .vm,
+.post-content .highlight .bp { color: #0f766e; }
+
+.post-content .highlight .o,
+.post-content .highlight .ow,
+.post-content .highlight .p,
+.post-content .highlight .pi { color: #475569; }
+
+.post-content .highlight .gd { color: #dc2626; }
+.post-content .highlight .gi { color: #16a34a; }
+.post-content .highlight .err { color: #dc2626; }
+
+/* ---------- Footer ---------- */
+.site-footer {
+  border-top: 1px solid #e5e7eb;
+  background: #fafafa;
+  padding: 28px 0;
+}
+.site-footer .footer-heading { color: var(--grey-color); }
+
+/* ---------- Small screens ---------- */
+@media screen and (max-width: 600px) {
+  .site-title-text { font-size: 1rem; }
+  .hero { padding: 36px 16px 32px; }
+  .hero-banner { max-width: 240px; }
+}

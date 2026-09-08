@@ -19,6 +19,12 @@
 # in the templates via {{ site.myvariable }}.
 
 title: 云飞机器人实验室 - YF Robotics Lab
+short_title: 云飞机器人实验室
+tagline: 让机器充满智慧！
+show_excerpts: true
+future: true
+author: 戴晓天
+author_url: https://www.zhihu.com/people/daixiaotian
 email: yfrobotics@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
   云飞机器人实验室 - 让机器充满智慧！

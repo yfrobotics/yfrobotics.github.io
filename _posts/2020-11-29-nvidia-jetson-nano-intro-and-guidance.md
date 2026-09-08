@@ -2,6 +2,7 @@
 layout: post
 title:  "Nvidia Jetson Nano介绍与使用指南"
 date:   2020-11-29 03:51:06 +0000
+author: 戴晓天
 categories: jekyll update
 ---
 
