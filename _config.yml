@@ -34,6 +34,13 @@ twitter_username: yfrobotics
 github_username:  yfrobotics
 youtube_username: "@yfrobotics"
 
+# External wiki / handbook links shown in the site navigation
+wiki_links:
+  - title: 机器人百科
+    url: https://yfrobotics.github.io/robowiki-cn/
+  - title: 自动驾驶手册
+    url: https://yfrobotics.github.io/self-driving-handbook-cn/
+
 # Build settings
 theme: minima
 plugins:

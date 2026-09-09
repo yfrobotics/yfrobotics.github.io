@@ -66,12 +66,23 @@ a:hover { color: var(--brand-color-dark); }
 .site-nav .page-link {
   color: #4b5563;
   line-height: 64px;
-  padding: 0 12px;
+  font-size: 0.92rem;
+  padding: 0;
+}
+/* Override minima's 20px gap — spacing comes from the bullet separators below. */
+.site-nav .page-link:not(:last-child) { margin-right: 0; }
+.site-nav .page-link + .page-link::before {
+  content: "·";
+  color: #cbd5e1;
+  padding: 0 9px;
+  font-weight: 400;
 }
 .site-nav .page-link:hover { color: var(--brand-color); text-decoration: none; }
 
 .menu-icon > svg path { fill: #4b5563; }
 .site-nav .trigger { background: #ffffff; }
+.site-nav .page-link-external { color: var(--brand-color); }
+.site-nav .page-link-external:hover { color: var(--brand-color-dark); }
 
 /* ---------- Home hero ---------- */
 .hero {
@@ -263,6 +274,8 @@ a:hover { color: var(--brand-color-dark); }
 /* ---------- Small screens ---------- */
 @media screen and (max-width: 600px) {
   .site-title-text { font-size: 1rem; }
+  .site-nav .page-link { padding: 5px 10px; }
+  .site-nav .page-link + .page-link::before { content: none; }
   .hero { padding: 36px 16px 32px; }
   .hero-banner { max-width: 240px; }
 }
