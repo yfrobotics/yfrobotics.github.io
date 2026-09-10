@@ -32,6 +32,9 @@
           {%- if site.github_username -%}
             <a class="page-link page-link-external" href="https://github.com/{{ site.github_username }}" target="_blank" rel="noopener">GitHub</a>
           {%- endif -%}
+          {%- if site.bilibili_url -%}
+            <a class="page-link page-link-external" href="{{ site.bilibili_url }}" target="_blank" rel="noopener">B站</a>
+          {%- endif -%}
           {%- for wiki in site.wiki_links -%}
             <a class="page-link page-link-external" href="{{ wiki.url }}" target="_blank" rel="noopener">{{ wiki.title | escape }}</a>
           {%- endfor -%}

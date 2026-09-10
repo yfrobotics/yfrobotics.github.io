@@ -33,6 +33,7 @@ url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: yfrobotics
 github_username:  yfrobotics
 youtube_username: "@yfrobotics"
+bilibili_url: https://space.bilibili.com/493264461
 
 # External wiki / handbook links shown in the site navigation
 wiki_links:
