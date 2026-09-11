@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "信息荒原”理论及思考"
+title:  "“信息荒原”理论及思考"
 date:   2023-02-23 03:51:06 +0000
 author: 戴晓天
 categories: jekyll update
