@@ -10,7 +10,7 @@ permalink: /about/
 
 如果您想帮助我们，请通过发送邮件至 yfrobotics@gmail.com 告诉我们您参与的机器人活动以及您可能与我们合作的方式。
 
----
+## About Us
 
 YF Robotics Laboratory (YFRL) is an independent, international and inclusive robotics interest group. YFRL was founded with the vision that robots will contribute to human society and largely affect the way how people would live in the near future. Our mission is to promote robotics projects and education, and to bring ideas from professionals to the public with state-of-the-art robotic research and technologies across the world.
 
