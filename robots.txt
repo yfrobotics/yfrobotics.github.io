@@ -1,0 +1,8 @@
+# https://www.robotstxt.org/robotstxt.html
+User-agent: *
+Allow: /
+
+Sitemap: https://yfrobotics.github.io/sitemap.xml
+Sitemap: https://yfrobotics.github.io/unitree-g1-handbook/sitemap.xml
+Sitemap: https://yfrobotics.github.io/robowiki-cn/sitemap.xml
+Sitemap: https://yfrobotics.github.io/self-driving-handbook-cn/sitemap.xml
