@@ -41,6 +41,8 @@ wiki_links:
     url: https://yfrobotics.github.io/robowiki-cn/
   - title: 自动驾驶手册
     url: https://yfrobotics.github.io/self-driving-handbook-cn/
+  - title: 宇树G1手册
+    url: https://yfrobotics.github.io/unitree-g1-handbook/
 
 # Build settings
 theme: minima
