@@ -81,8 +81,14 @@ a:hover { color: var(--brand-color-dark); }
 
 .menu-icon > svg path { fill: #4b5563; }
 .site-nav .trigger { background: #ffffff; }
-.site-nav .page-link-external { color: var(--brand-color); }
-.site-nav .page-link-external:hover { color: var(--brand-color-dark); }
+/* External links share the internal links' colour; the arrow marks that they
+   leave the site. It inherits colour so it follows the link on hover. */
+.site-nav .page-link-external::after {
+  content: "\2197";
+  font-size: 0.78em;
+  margin-left: 2px;
+  opacity: 0.55;
+}
 
 /* ---------- Home hero ---------- */
 .hero {
