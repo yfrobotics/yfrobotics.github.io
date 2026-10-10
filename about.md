@@ -10,7 +10,7 @@ permalink: /about/
 
 如果您想帮助我们，请通过发送邮件至 yfrobotics@gmail.com 告诉我们您参与的机器人活动以及您可能与我们合作的方式。
 
-云飞机器人实验室 ( [知乎](https://www.zhihu.com/column/yfworld) \| [B站](https://space.bilibili.com/493264461) \| [博客](https://yfrobotics.github.io/) \| [YouTube](https://www.youtube.com/@yfrobotics) \| [Ins](https://www.instagram.com/yfrobotics/) )
+云飞机器人实验室 ( [知乎](https://www.zhihu.com/column/yfworld) \| [B站](https://space.bilibili.com/493264461) \| [博客](https://yfrobotics.github.io/) \| [YouTube](https://www.youtube.com/@yfrobotics) \| [Instagram](https://www.instagram.com/yfrobotics/) )
 
 ## About Us
 
@@ -19,3 +19,5 @@ YF Robotics Laboratory (YFRL) is an independent, international and inclusive rob
 We are a small special interest group of people from worldwide who love robots. We aim to bring together robot researchers, developers and enthusiasts to build a world with more intelligent, reliable and safer autonomous robots. We are specially interested to create cross-domain robotics-related projects, to make robots social friendly, and to make people thinking how to live harmony with robots.
 
 Please help us by telling us which robot activities you are involved in and what possibly you could do together with us by sending an email to yfrobotics@gmail.com.
+
+YF Robotics Laboratory ( [YouTube](https://www.youtube.com/@yfrobotics) \| [Instagram](https://www.instagram.com/yfrobotics/) )
